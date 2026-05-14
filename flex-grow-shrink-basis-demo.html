@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>flex-grow / flex-shrink / flex-basis 示例</title>
+  <style>
+    body {
+      margin: 24px;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f5f6f8;
+    }
+    h1 {
+      font-size: 1.25rem;
+      margin: 0 0 8px;
+    }
+    .note {
+      max-width: 520px;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .row {
+      display: flex;
+      width: 400px;
+      border: 2px solid #333;
+      background: #fff;
+    }
+    .box {
+      height: 72px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .box small {
+      opacity: 0.9;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    /* A: 不 grow，会 shrink — flex: grow shrink basis */
+    .a {
+      flex: 0 1 100px;
+      background: #e74c3c;
+    }
+    .b {
+      flex: 1 2 100px;
+      background: #3498db;
+    }
+    .c {
+      flex: 2 1 100px;
+      background: #2ecc71;
+    }
+    .hint {
+      margin-top: 16px;
+      max-width: 520px;
+      padding: 12px 14px;
+      background: #fff;
+      border-left: 4px solid #3498db;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    .hint code {
+      font-size: 0.85em;
+    }
+    .play {
+      margin-top: 28px;
+      max-width: 520px;
+    }
+    .play h2 {
+      font-size: 1rem;
+      margin: 0 0 10px;
+    }
+    .row-narrow {
+      width: 250px;
+    }
+    .row-narrow .a {
+      flex: 0 1 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>flex-grow / flex-shrink / flex-basis</h1>
+  <p class="note">
+    容器宽 400px；A/B/C 的 <code>flex-basis</code> 各 100px（共 300px），剩余 100px 由 B、C 按
+    <code>flex-grow</code> 比例 1:2 分配。
+  </p>
+
+  <div class="row" aria-label="默认宽度 400px">
+    <div class="box a">A<small>flex: 0 1 100px</small></div>
+    <div class="box b">B<small>flex: 1 2 100px</small></div>
+    <div class="box c">C<small>flex: 2 1 100px</small></div>
+  </div>
+
+  <div class="hint">
+    <strong>心算：</strong>剩余 100px → B 约 +33.33px，C 约 +66.67px。可在开发者工具里查看各列「计算后宽度」验证。
+  </div>
+
+  <section class="play">
+    <h2>挤不下时（容器 250px）</h2>
+    <p class="note" style="margin-bottom: 12px;">
+      三个 basis 加起来大于容器，<code>flex-shrink</code> 生效，三列都会变窄。
+    </p>
+    <div class="row row-narrow" aria-label="窄容器 250px">
+      <div class="box a">A<small>0 1 100</small></div>
+      <div class="box b">B<small>1 2 100</small></div>
+      <div class="box c">C<small>2 1 100</small></div>
+    </div>
+  </section>
+</body>
+</html>

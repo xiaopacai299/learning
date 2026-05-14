@@ -1,0 +1,10 @@
+{
+  "$schema_comment": "学习进度：documents 的 key 为相对仓库根的路径，使用正斜杠",
+  "version": 1,
+  "currentFocus": {
+    "path": "",
+    "lastTopic": "",
+    "note": "下次主要想攻的方向，可为空"
+  },
+  "documents": {}
+}

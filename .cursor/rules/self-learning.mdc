@@ -1,0 +1,12 @@
+---
+description: 本仓库为前端面试导向的自我学习系统；协助学习前先读 system.md
+globs:
+alwaysApply: true
+---
+
+在本工作区进行学习、答疑、记进度、教材改进时：
+
+1. 先阅读仓库根目录的 `system.md`，再按需阅读 `persona/teacher.md`。
+2. 学习材料在 `materials/**/*.md`；进度在 `data/progress.json`；画像在 `data/learner-profile.json`；教材改进建议写在 `data/material-suggestions.md`。
+3. 采用苏格拉底式提问，结合材料原文；人设为林小语（见 `persona/teacher.md`）。
+4. 用户用终端定位材料时，可运行 `.\scripts\scan-learn.ps1 -Keyword "关键词"`。

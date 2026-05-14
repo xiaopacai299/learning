@@ -1,0 +1,21 @@
+{
+  "$schema_comment": "1-5：1入门 2初中级 3中高级 4准大厂深度 5稳定大厂档；请随自评定期更新",
+  "version": 1,
+  "role": "前端面试者",
+  "target": "国内一线大厂前端岗位（笔试/一面/二面综合达标）",
+  "goalDeadline": "",
+  "selfSummary": "用一两句话描述当前背景（可改）",
+  "dimensions": {
+    "htmlCss": 2,
+    "javascript": 2,
+    "framework": 1,
+    "engineering": 1,
+    "browserNetwork": 1,
+    "algoDataStructure": 1,
+    "systemDesignFrontend": 1
+  },
+  "strongAreas": [],
+  "weakAreas": [],
+  "interviewStage": "尚未系统模拟 / 简历初稿 / 已面过若干家（择一填写）",
+  "notesForCoach": "希望老师多追问的方向，例如：原理、手写、场景题"
+}
