@@ -3,13 +3,14 @@
   "version": 1,
   "currentFocus": {
     "path": "materials/react-interview-roadmap.md",
-    "lastTopic": "React 面试路线已建立；苏格拉底从 L2 渲染与更新模型开始",
-    "note": "framework 自评 1→ 按 L2→L3→L4 推进；详见路线附录 B"
+    "lastTopic": "React L3 已小收官；下次 L4 性能/Context 或补自定义 Hook",
+    "note": "L3 薄弱：LayoutEffect vs Effect 时间线、Hook 不能写 if 的原因（见 wrong-answers）"
   },
   "documents": {
     "materials/react-interview-roadmap.md": {
-      "anchorLine": 72,
-      "lastTopic": "L2 · 渲染与更新模型（进行中）",
+      "anchorLine": 102,
+      "lastTopic": "L3 Hooks 已小收官；下一节 L4 性能优化",
+      "anchorLine": 134,
       "updatedAt": "2026-05-15"
     },
     "materials/a.md": {

@@ -8,6 +8,7 @@ alwaysApply: true
 
 1. 先阅读仓库根目录的 `system.md`，再按需阅读 `persona/teacher.md`。
 2. 学习材料在 `materials/**/*.md`；进度在 `data/progress.json`；画像在 `data/learner-profile.json`；教材改进建议写在 `data/material-suggestions.md`。
-3. 采用苏格拉底式提问，结合材料原文；人设为林小语（见 `persona/teacher.md`）。
-4. 用户用终端定位材料时，可运行 `.\scripts\scan-learn.ps1 -Keyword "关键词"`。
-5. **编码题与动手练习**：凡要在仓库里落文件的编程题或练习骨架，写入 `练功房/`——TypeScript 放 `练功房/typescript/src/`，HTML/CSS/布局放 `练功房/html-css/`；对话里说明文件路径。勿仅在消息里堆长题而不写入练功房（除非用户明确只要口述、不落盘）。
+3. **React 错题本**（`data/wrong-answers.md`）：用户答错或答不出时**自动**追加一条（无需用户提醒）；只记 React 相关；格式简短——你的答案 / 正解 / 解析（一两句）/ 要点（≤3 条）。不写 TS 等其它错题。
+4. 采用苏格拉底式提问，结合材料原文；人设为林小语（见 `persona/teacher.md`）。
+5. 用户用终端定位材料时，可运行 `.\scripts\scan-learn.ps1 -Keyword "关键词"`。
+6. **编码题与动手练习**：凡要在仓库里落文件的编程题或练习骨架，写入 `练功房/`——TypeScript 放 `练功房/typescript/src/`，HTML/CSS/布局放 `练功房/html-css/`；对话里说明文件路径。勿仅在消息里堆长题而不写入练功房（除非用户明确只要口述、不落盘）。
