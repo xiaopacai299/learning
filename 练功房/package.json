@@ -1,0 +1,11 @@
+{
+  "name": "learning-dojo",
+  "private": true,
+  "description": "练功房：本地 TypeScript 练习用",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "~5.7.2"
+  }
+}

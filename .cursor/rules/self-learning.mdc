@@ -10,3 +10,4 @@ alwaysApply: true
 2. 学习材料在 `materials/**/*.md`；进度在 `data/progress.json`；画像在 `data/learner-profile.json`；教材改进建议写在 `data/material-suggestions.md`。
 3. 采用苏格拉底式提问，结合材料原文；人设为林小语（见 `persona/teacher.md`）。
 4. 用户用终端定位材料时，可运行 `.\scripts\scan-learn.ps1 -Keyword "关键词"`。
+5. **编码题与动手练习**：凡要在仓库里落文件的编程题或练习骨架，写入 `练功房/`——TypeScript 放 `练功房/typescript/src/`，HTML/CSS/布局放 `练功房/html-css/`；对话里说明文件路径。勿仅在消息里堆长题而不写入练功房（除非用户明确只要口述、不落盘）。

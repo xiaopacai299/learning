@@ -2,9 +2,20 @@
   "$schema_comment": "学习进度：documents 的 key 为相对仓库根的路径，使用正斜杠",
   "version": 1,
   "currentFocus": {
-    "path": "",
-    "lastTopic": "",
-    "note": "下次主要想攻的方向，可为空"
+    "path": "materials/react-interview-roadmap.md",
+    "lastTopic": "React 面试路线已建立；苏格拉底从 L2 渲染与更新模型开始",
+    "note": "framework 自评 1→ 按 L2→L3→L4 推进；详见路线附录 B"
   },
-  "documents": {}
+  "documents": {
+    "materials/react-interview-roadmap.md": {
+      "anchorLine": 72,
+      "lastTopic": "L2 · 渲染与更新模型（进行中）",
+      "updatedAt": "2026-05-15"
+    },
+    "materials/a.md": {
+      "anchorLine": 3232,
+      "lastTopic": "四（2）react — 可作 L2～L8 补充阅读",
+      "updatedAt": "2026-05-15"
+    }
+  }
 }
