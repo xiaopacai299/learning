@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>qiankun Shell · AI 微前端 Demo</title>
+    <link rel="stylesheet" href="/src/shell.css" />
+  </head>
+  <body>
+    <header class="shell-header">
+      <h1>Shell 基座（qiankun）</h1>
+      <p class="hint">主应用只负责注册/加载子应用，Chat=Vue2 · Editor=Vue3 · Viz=React</p>
+      <div class="shell-controls">
+        <label>
+          当前模型：
+          <select id="model-select">
+            <option value="gpt-demo">gpt-demo</option>
+            <option value="claude-demo">claude-demo</option>
+            <option value="local-demo">local-demo</option>
+          </select>
+        </label>
+        <span id="trace-id" class="trace"></span>
+      </div>
+    </header>
+    <div class="shell-body">
+      <nav class="shell-nav">
+        <p class="nav-title">路由（hash）</p>
+        <a href="#/chat" class="nav-link" data-route="chat">Chat · Vue 2</a>
+        <a href="#/editor" class="nav-link" data-route="editor">Editor · Vue 3</a>
+        <a href="#/viz" class="nav-link" data-route="viz">Viz · React</a>
+        <hr />
+        <p class="nav-title">EventBus 日志</p>
+        <ul id="event-log" class="event-log"></ul>
+      </nav>
+      <main class="shell-main">
+        <div id="subapp-container" class="subapp-container"></div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "chat-vue2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "ai-qiankun-demo": "file:../..",
+    "vue": "^2.7.16"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue2": "^2.3.3",
+    "vite": "^5.4.0",
+    "vite-plugin-qiankun": "^1.0.15"
+  }
+}

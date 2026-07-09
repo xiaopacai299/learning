@@ -1,0 +1,11 @@
+{
+  "name": "ai-qiankun-demo",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n shell,chat,editor,viz -c blue,green,yellow,magenta \"npm run dev --prefix packages/shell\" \"npm run dev --prefix packages/chat-vue2\" \"npm run dev --prefix packages/editor-vue3\" \"npm run dev --prefix packages/viz-react\"",
+    "install:all": "npm install && npm install --prefix packages/shell && npm install --prefix packages/chat-vue2 && npm install --prefix packages/editor-vue3 && npm install --prefix packages/viz-react"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

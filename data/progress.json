@@ -1,21 +1,60 @@
 {
   "$schema_comment": "学习进度：documents 的 key 为相对仓库根的路径，使用正斜杠",
-  "version": 1,
+  "version": 2,
   "currentFocus": {
     "path": "materials/react-interview-roadmap.md",
-    "lastTopic": "React L3 已小收官；下次 L4 性能/Context 或补自定义 Hook",
-    "note": "L3 薄弱：LayoutEffect vs Effect 时间线、Hook 不能写 if 的原因（见 wrong-answers）"
+    "lastTopic": "React 续学；建议 L3 闭包/effect 依赖 或 错题本复习",
+    "note": "Node 已暂停，快照见 node 字段"
+  },
+  "react": {
+    "path": "materials/react-interview-roadmap.md",
+    "status": "active",
+    "anchorLine": 260,
+    "lastTopic": "L1～L8 已扫；L8 原理/SSR/白板/附录 A 未系统练",
+    "updatedAt": "2026-05-19",
+    "completedMain": ["L2", "L4", "L5", "L6", "L7-partial", "L8-partial"],
+    "weakOrPending": [
+      "L1 快扫",
+      "L3 闭包/effect 依赖/自定义 Hook",
+      "L4 虚拟列表",
+      "L7 useDeferredValue/RSC",
+      "L8 全链路口述/手写 useState/SSR/Redux 数据流",
+      "附录 A 场景题",
+      "错题本 data/wrong-answers.md 约 20 条"
+    ],
+    "nextResume": "L3 深化（闭包陷阱）或 错题本抽问 或 附录 A 全链路"
+  },
+  "node": {
+    "path": "materials/node-interview-roadmap.md",
+    "status": "paused",
+    "anchorLine": 260,
+    "lastTopic": "L1～L7 已练；L6 雪崩/TTL、MySQL 索引、L8 秒杀深化待续",
+    "updatedAt": "2026-05-19",
+    "completedMain": ["L1", "L2", "L3-概念", "L4", "L5", "L6-Redis入门", "L7-cluster"],
+    "weakOrPending": [
+      "L2 顶层 setTimeout vs setImmediate（错题本）",
+      "L3 背压、pipeline",
+      "L4 洋葱顺序、PUT vs PATCH（错题本）",
+      "L6 雪崩、MySQL、分布式锁",
+      "L8 秒杀完整方案、SSR 水合",
+      "错题本 data/wrong-answers-node.md"
+    ],
+    "nextResume": "接着 Node 路线 L6 雪崩/MySQL 或 L8 秒杀深化"
   },
   "documents": {
     "materials/react-interview-roadmap.md": {
-      "anchorLine": 102,
-      "lastTopic": "L3 Hooks 已小收官；下一节 L4 性能优化",
-      "anchorLine": 134,
-      "updatedAt": "2026-05-15"
+      "anchorLine": 127,
+      "lastTopic": "续学 L3 Hooks 深化或错题复习",
+      "updatedAt": "2026-05-19"
+    },
+    "materials/node-interview-roadmap.md": {
+      "anchorLine": 260,
+      "lastTopic": "已暂停；详见 node 字段",
+      "updatedAt": "2026-05-19"
     },
     "materials/a.md": {
       "anchorLine": 3232,
-      "lastTopic": "四（2）react — 可作 L2～L8 补充阅读",
+      "lastTopic": "四（2）react — React 续学时作补充",
       "updatedAt": "2026-05-15"
     }
   }
